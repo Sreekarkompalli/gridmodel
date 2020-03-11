@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complexgrid</title>
+</head>
+<style>
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: minmax(200px,auto);
+        grid-gap: 1em;
+    }
+    .gridcontainer>div{
+        background-color: grey;
+        padding: 1em;
+    }
+    .gridcontainer>div:nth-child(even){
+        background-color: lightgrey;
+    }
+    #box1{
+        color: lightsalmon;
+        font-size: 1.5em;
+        justify-self: center;
+        align-self: center;
+       
+    }
+    #box2{
+        background-color: lightseagreen;
+        font-size: 5em;
+        grid-column: 2/4;
+    }
+    #box3{
+        background-color: yellowgreen;
+        font-size: 2.2em;
+        grid-column: 1/3;
+    }
+    #box4{
+        background-color: mediumspringgreen;
+        font-size: 1.9em;
+        grid-column: 3/4;
+      grid-row: 2/4;
+    }
+    #box5{
+        font-size: 1.5em;
+        background-color: wheat;
+    }
+    #box6{
+       
+    }
+    
+
+</style>
+
+<body>
+     <div class="gridcontainer">
+     <div id ="box1">profile </div>
+     <div id ="box2">full stack developer</div>
+     <div id ="box3">i am SREEKAR KOMPALLI </div>
+     <div id ="box4">
+         <div>proud</div>
+         <div>to</div>
+         <div>be</div>
+         <div>the</div>
+         <div>prograd</div>
+        </div>
+     <div id ="box5">completed btech </div>
+     <div id ="box6">studied in karunyauniversity </div>
+     </div>
+    </body>
+</html>
